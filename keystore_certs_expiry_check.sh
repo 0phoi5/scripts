@@ -17,12 +17,15 @@ echo -e "\n" | keytool -list -v -keystore "$KEYSTORE" 2>/dev/null | grep 'until:
 	SINCE_EPOCH=$(date -d "$EXPIRY_DATE" +%s)
 
 	# Check if expired
-	if (( SINCE_EPOCH -CURRENT_DATE <= 0 )) then
+	if (( SINCE_EPOCH - CURRENT_DATE <= 0 ))
+ 	then
 		echo "A certificate in $KEYSTORE has expired!"
 		exit 1
 	else
-		if (( SINCE_EPOCH - CURRENT_DATE <= 2678400 )) then
-			if (( SINCE_EPOCH -CURRENT_DATE <= 604800 )) then
+		if (( SINCE_EPOCH - CURRENT_DATE <= 2678400 ))
+  		then
+			if (( SINCE_EPOCH - CURRENT_DATE <= 604800 ))
+   			then
 				echo "A certificate in $KEYSTORE is due to expire within a week!"
 				exit 1
 			else
