@@ -3,7 +3,7 @@
 # Authour: Jack Collins (jackcollins.me.uk)
 # Purpose: A monitoring script to check a .jks filestore for expired, or due to expire, certs.
 #          Can be used by SCOM, Check_MK, etc. or simply run from a cron job or systemd timer, if given added functionality to send an email alert, for example.
-# Last update: 23/02/2024
+# Last update (DD-MM-YY): 23/02/24
 ############
 
 # Path to keystore
