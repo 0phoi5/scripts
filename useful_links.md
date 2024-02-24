@@ -46,8 +46,15 @@ A bunch of useful links for Linux Admin related resources.
 - Schema Generator For SEO - https://hallanalysis.com/json-ld-generator/
 
 ## Pentesting
+- Huge pentesting cheat sheet - https://hausec.com/pentesting-cheatsheet/
 - 403 & 401 Bypasses - https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/403-and-401-bypasses
+- Nmap Cheat Sheet - https://www.stationx.net/nmap-cheat-sheet/
 - Python Libraries for Hackers - https://systemweakness.com/python-libraries-for-hackers-7f71bc2d88de
+- Reverse Shell Cheat Sheet - https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+- Identify hash types - https://www.tunnelsup.com/hash-analyzer/
+- Online hash cracking - https://www.onlinehashcrack.com/
+- Custom Word List generator (cewl), get wordlists from spidering websites - https://www.kali.org/tools/cewl/
+- Holehe OSINT, check if an email is registered to online accounts - https://github.com/megadose/holehe
 
 ## Misc.
 - OEM keys - https://www.g2a.com/
