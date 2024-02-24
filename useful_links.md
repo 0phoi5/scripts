@@ -54,7 +54,6 @@ A bunch of useful links for Linux Admin related resources.
 - Identify hash types - https://www.tunnelsup.com/hash-analyzer/
 - Online hash cracking - https://www.onlinehashcrack.com/
 - Custom Word List generator (cewl), get wordlists from spidering websites - https://www.kali.org/tools/cewl/
-- Holehe OSINT, check if an email is registered to online accounts - https://github.com/megadose/holehe
 
 ## Misc.
 - OEM keys - https://www.g2a.com/
