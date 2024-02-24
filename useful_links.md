@@ -2,11 +2,16 @@
 
 A bunch of useful links for Linux Admin related resources.
 
+## RHEL
+- How to register and subscribe a RHEL system to the Red Hat Customer Portal using Red Hat Subscription-Manager - https://access.redhat.com/solutions/253273
+- Installing VMware Tools in a Linux virtual machine using Red Hat Package Manager (RPM) - https://kb.vmware.com/s/article/1018392
+
 ## AWS
 - How to Host Static Website using AWS Amplify - https://www.youtube.com/watch?v=CRwCqUxGHE8
 - Batch Upload Files to Amazon S3 Using the AWS CLI - https://aws.amazon.com/getting-started/hands-on/backup-to-s3-cli/
 - EBS Snapshot Management Using AWS Lambda and CloudWatch - https://medium.com/nerd-for-tech/ebs-snapshot-management-using-aws-lambda-and-cloudwatch-d961fdbe3772
 - Configure a Lambda function to assume an IAM role in another AWS account - https://repost.aws/knowledge-center/lambda-function-assume-iam-role
+- How to encrypt EBS volumes of a running EC2 instance - https://hackernoon.com/how-to-encrypt-ebs-volumes-of-a-running-ec2-instance-a2236b0b45
 
 ## Ansible
 - 7 Tips To Turbo-charge Your Ansible - https://shadow-soft.com/blog/tech/turbo-charge-your-ansible  
@@ -25,6 +30,7 @@ A bunch of useful links for Linux Admin related resources.
 - CompTIA Security+ Exam Cram SY0-601 - https://www.youtube.com/watch?v=9Hd8QJmZQUc
 - CompTIA PenTest+ Full Course - FREE [11 Hours] PT0-002 - https://www.youtube.com/watch?v=WczBlBjoQeI
 - SELinux overview - https://www.youtube.com/watch?v=_WOKRaM-HI4
+- All Zero Point Security courses - https://training.zeropointsecurity.co.uk/collections
 
 ## Drivers
 - Fedora nVidia drivers - https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/
@@ -38,6 +44,10 @@ A bunch of useful links for Linux Admin related resources.
 - LSI keyword generator - https://www.keysearch.co/tools/lsi-keywords-generator
 - Website performance and optimisation test - https://www.webpagetest.org/
 - Schema Generator For SEO - https://hallanalysis.com/json-ld-generator/
+
+## Pentesting
+- 403 & 401 Bypasses - https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/403-and-401-bypasses
+- Python Libraries for Hackers - https://systemweakness.com/python-libraries-for-hackers-7f71bc2d88de
 
 ## Misc.
 - OEM keys - https://www.g2a.com/
