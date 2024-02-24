@@ -8,8 +8,15 @@ A bunch of useful links for Linux Admin related resources.
 - EBS Snapshot Management Using AWS Lambda and CloudWatch - https://medium.com/nerd-for-tech/ebs-snapshot-management-using-aws-lambda-and-cloudwatch-d961fdbe3772
 - Configure a Lambda function to assume an IAM role in another AWS account - https://repost.aws/knowledge-center/lambda-function-assume-iam-role
 
-## Network
+## Ansible
+- 7 Tips To Turbo-charge Your Ansible - https://shadow-soft.com/blog/tech/turbo-charge-your-ansible  
+
+## Monitoring (mainly SCOM and CheckMK)
+- Monitoring AWS with CheckMK - https://docs.checkmk.com/latest/en/monitoring_aws.html
+
+## Networking
 - SSH Jumpbox / Bastion Configuration - https://www.redhat.com/sysadmin/ssh-proxy-bastion-proxyjump
+- Duck DNS (get a static online IP, forward traffic to your changing IP) - https://www.duckdns.org/
 
 ## Courses / Exams
 - CompTIA Linux+ XK0-004 Complete Video Course - https://www.youtube.com/playlist?list=PLC5eRS3MXpp-zlq64CcDfzMl2hO2Wtcl0
@@ -17,9 +24,13 @@ A bunch of useful links for Linux Admin related resources.
 - CompTIA Security+ Full Course (2023) - https://www.youtube.com/playlist?list=PLMYSjEaGLw_uut80YG0zyLsrPJ94Y8LU9
 - CompTIA Security+ Exam Cram SY0-601 - https://www.youtube.com/watch?v=9Hd8QJmZQUc
 - CompTIA PenTest+ Full Course - FREE [11 Hours] PT0-002 - https://www.youtube.com/watch?v=WczBlBjoQeI
+- SELinux overview - https://www.youtube.com/watch?v=_WOKRaM-HI4
 
 ## Drivers
 - Fedora nVidia drivers - https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/
+
+## Backups
+- Linux backups using Realx and Recover (ReaR) - https://timothygruber.com/backup-and-restore/linux-backups-using-relax-and-recover-rear/
 
 ## Website Creation
 - Hugo Themes - https://themes.gohugo.io/
@@ -27,3 +38,6 @@ A bunch of useful links for Linux Admin related resources.
 - LSI keyword generator - https://www.keysearch.co/tools/lsi-keywords-generator
 - Website performance and optimisation test - https://www.webpagetest.org/
 - Schema Generator For SEO - https://hallanalysis.com/json-ld-generator/
+
+## Misc.
+- OEM keys - https://www.g2a.com/
