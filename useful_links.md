@@ -58,3 +58,5 @@ A bunch of useful links for Linux Admin related resources.
 
 ## Misc.
 - OEM keys - https://www.g2a.com/
+- Canary tokens (scream when something happens) - https://canarytokens.org/generate#
+- Google D0rk automation - https://systemweakness.com/g00gle-d0rk-automation-l1k3-4-g0d-da7bd24c406d
