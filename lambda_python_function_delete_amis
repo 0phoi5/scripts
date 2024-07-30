@@ -1,0 +1,38 @@
+# Delete patching related AMI via tag Patching=True
+
+import boto3
+
+def lambda_handler(event, context):
+        ec2_client = boto3.client('ec2')
+        deleted_snapshots = []
+        deregistered_images = []
+        
+        response = ec2_client.describe_images(Filters=[
+            {'Name': 'tag-key', 'Values': ['Patching']},
+            {'Name': 'tag-value', 'Values': ['True']}
+        ])
+        
+        if 'Images' in response:
+            images = response['Images']
+        
+            for image in images:
+                image_id = image['ImageId']
+                deregistered_images.append(image_id)
+                ec2_client.deregister_image(ImageId=image_id)
+                
+                block_device_mappings = image.get('BlockDeviceMappings', [])
+                for mapping in block_device_mappings:
+                    if 'Ebs' in mapping and 'SnapshotId' in mapping['Ebs']:
+                        snapshot_id = mapping['Ebs']['SnapshotId']
+                        deleted_snapshots.append(snapshot_id)
+                        ec2_client.delete_snapshot(SnapshotId=snapshot_id)
+            
+            output_message = "Deleted Snapshots: {} Deregistered AMIs: {}".format(deleted_snapshots, deregistered_images)
+            
+        else:
+            output_message = "No AMI images found to delete."
+            
+        return {
+            'statusCode': 200,
+            'body': output_message
+        }
