@@ -1,6 +1,5 @@
 #!/usr/bin/pwsh
 
-$six_hours_ago = (Get-Date).AddHours(-6)
 $vs_servers = @("server1.domain.co.uk","server2.domain.co.uk")
 
 ForEach ($vs_server in $vs_servers) {
