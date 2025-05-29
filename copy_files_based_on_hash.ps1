@@ -32,8 +32,8 @@ ForEach-Object {
         $destName = $_.Name
         $counter = 1
 
-        while (Test-Path -Path (Join-Path -Path $to_be_sorted -ChildPath $destName)) {
-            $existingPath = Join-Path -Path $to_be_sorted -ChildPath $destName
+        while (Test-Path -Path (Join-Path -Path $destination -ChildPath $destName)) {
+            $existingPath = Join-Path -Path $destination -ChildPath $destName
             $existingHash = Get-FileHash -Path $existingPath -Algorithm SHA256
 
             if ($existingHash.Hash -eq $hash.Hash) {
@@ -45,7 +45,7 @@ ForEach-Object {
             $counter++
         }
 
-        $finalPath = Join-Path -Path $to_be_sorted -ChildPath $destName
+        $finalPath = Join-Path -Path $destination -ChildPath $destName
         Write-Host "Copying: $($_.FullName) -> $finalPath" -ForegroundColor Green
         Copy-Item -Path $_.FullName -Destination $finalPath
         $existingHashes[$hash.Hash] = $true
