@@ -7,7 +7,7 @@
 #>
 
 $to_be_sorted = "D:\images"
-$destination = "C:\images"
+$destination = "C:\Users\jackc\Pictures"
 
 Write-Host "Scanning existing files in $destination and computing hashes..." -ForegroundColor Cyan
 $existingHashes = @{}
