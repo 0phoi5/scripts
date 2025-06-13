@@ -1,7 +1,7 @@
 from safetensors.torch import load_file
 
 # Replace this with your actual path if different
-path = "vickixbourneonedotfive.safetensors"
+path = "filename.safetensors"
 
 weights = load_file(path)
 lora_keys = [k for k in weights.keys() if k.startswith("lora")]
