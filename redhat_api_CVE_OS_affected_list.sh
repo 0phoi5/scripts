@@ -1,5 +1,13 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
+############
+# Authour: Jack Collins (jackcollins.me.uk)
+# Purpose: Takes a list of CVEs in a text file, one on each line, and uses them
+#          and Red Hat's API URLs (JSON files) to look up whether RHEL8 and RHEL9
+#          are affected, creating a CSV that confirms this info, for later comparison.
+#          Easy enough to update to compare different distributions if needed in future.
 # Usage: ./classify-cves.sh [input_file] [output_csv]
+# Last update (DD-MM-YY): 03/09/2025
+############
 
 set -euo pipefail
 
@@ -36,7 +44,5 @@ while IFS= read -r cve; do
     ] | @csv
   ' --arg cve "$cve" <<<"$j" >> "$outfile"
 done < "$infile"
-
-
 
 echo "Wrote $outfile" >&2
